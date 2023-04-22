@@ -21,10 +21,10 @@ function addExpense() {
 }
 
 function resetForm(){
-     document.querySelector('#category').value=" "
-     document.querySelector('#description').value=" "
-     document.querySelector('#amount').value=" "
-     document.querySelector('#editIndex').value=" "
+     document.querySelector('#category').value= document.getElementById("selected").textContent
+     document.querySelector('#description').value= ''
+     document.querySelector('#amount').value= ''
+     document.querySelector('#editIndex').value= ''
      document.querySelector("#add-btn").innerHTML="add expense"
 }
 function deleteExpense(row){
