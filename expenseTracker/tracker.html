@@ -32,17 +32,17 @@
                     <div class="input-group">
                         <div class="input-group-text">$</div>
                         <!-- <label class="input-group-text">$</label> -->
-                        <input type="number" id="amount" class="form-control">
+                        <input type="number" id="amount" class="form-control" required>
                     </div>
                 </div>
                 <div class="form-group col-auto">
                     <label for="description" class="form-label">choose description</label>
-                    <input type="text" id="description" class="form-control">
+                    <input type="text" id="description" class="form-control" required>
                 </div>
                 <div class="form-group col-auto">
                     <label for="category" class="form-label">Choose a category:</label>
-                    <select name="expenses" id="category" class="form-select">
-                        <option selected id="selected">Choose...</option>
+                    <select name="expenses" id="category" class="form-select" required>
+                        <option selected id="selected" >Choose...</option>
                         <option value="rent">rent</option>
                         <option value="grocery">grocery</option>
                         <option value="vacation">vacation</option>
