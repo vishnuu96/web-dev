@@ -4,10 +4,6 @@ function addExpense() {
     let category = document.querySelector('#category').value;
     let amount = document.querySelector('#amount').value;
     let editIndex = document.querySelector('#editIndex').value;
-    if (category == 'choose') {
-        alert("please select the category")
-        return
-    }
 
     if (editIndex === '') {
         let expenses = JSON.parse(localStorage.getItem('expenses')) || [];
